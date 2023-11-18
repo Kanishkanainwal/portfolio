@@ -633,50 +633,10 @@ section{
 .contact form .textarea-field textarea{
     resize: none;
 }
-.contact form .btnboxx .btnbox{
+.contact form .btnbox{
     cursor: pointer;
 }
-.btnboxx {
-    
-  
-    z-index: 1;
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-   width: 150px;
-    height: 25px;
-    background: var(--main-color);
-    border: 2px solid var(--main-color);
-    border-radius: 8px;
-    font-size: 19px;
-    color: var(--second-bg-color);
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    overflow: hidden;
-    transition: .5s;
-}
-.btnboxx:hover{
-    color:var(--main-color);
-}
 
-.btnboxx::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--second-bg-color);
-    z-index: -1;
-    transition: 0.5s;
-}
-.btnboxx:hover::before
-{
-    width: 100%;
-
-}
 .footer{
     display: flex;
     justify-content: space-between;
@@ -895,4 +855,22 @@ section{
     .home-content h1{
         font-size: 5rem;
     }
+}
+form button{
+    padding: 10px 22px;
+    background: #00abf0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00abf0;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .5s;
+}
+form button:hover{
+    box-shadow: none;
 }
