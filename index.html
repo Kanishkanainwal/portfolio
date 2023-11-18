@@ -230,30 +230,39 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form action="https://formsubmit.co/b3708edce0d344e7324025f29c8e3591" method="POST">
+            
+            
+            <!--secret-->
+            <input type="text" name="kannu" style="display:none;">
+            <!--disable captcha-->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="next" value="submit.html">
+
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="full name"  id="name" class="item" required>
+                    <input type="text" placeholder="full name" name="Name"  id="name" class="item" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="email address" required id="email" class="item">
+                    <input type="text" placeholder="email address"  name="Email&nbsp;Address" required id="email" class="item">
                     <span class="focus"></span>
                 </div>
             </div>
              <div class="input-box">
-                    <div class="input-field">
-                        <input type="number" placeholder="mobile number" required id="phone" class="item">
+                    <div class="input-field"><!-- here &nbsp; this is used to give spaces-->
+                        <input type="number" placeholder="mobile number"  name="Mobile&nbsp;Number" required id="phone" class="item">
                         <span class="focus"></span>
                     </div>
     
                     <div class="input-field">
-                        <input type="text" placeholder="email subject" required class="item" id="subject">
+                        <input type="text" placeholder="email subject"  name="Email&nbsp;Subject" required class="item" id="subject">
                         <span class="focus"></span>
                     </div>
             </div> 
                     <div class="textarea-field">
-                        <textarea name="" id="message" cols="30" rows="10" placeholder="your message" required class="item"></textarea>
+                        <textarea name="" id="message" cols="30" rows="10" placeholder="your message" name="Textarea" required class="item"></textarea>
                         <span class="focus"></span>
                     </div>
 
