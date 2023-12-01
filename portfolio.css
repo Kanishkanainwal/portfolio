@@ -684,53 +684,9 @@ section{
 }
 .footer-icon a:hover i{
     color: var(--main-color);
-}
-@media (max-width:1200px) {
-   html{
-          font-size: 55%;
-       }
-}
-@media (max-width:991px) {
-    .header{
-           padding:2rem 4% ;
-        }
-        section{
-            padding: 10rem 4% 2rem;
-        }
-        .home{
-            padding: 0 4%;
-        }
-        .footer{
-            padding: 2rem 4%;
-        }
- }
- @media (max-width:768px) {
-    .header{
-           background-color: var(--bg-color) ;
-        }
-        #menu-icon{
-            display:block;
+} 
+/*breakpoints*/
 
-        }
-        .navbar{
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            padding: 1rem 4%;
-            background-color: var(--bg-color);
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
-        }
-        section{
-            padding: 10rem 4% 2rem;
-        }
-        .home{
-            padding: 0 4%;
-        }
-        .footer{
-            padding: 2rem 4%;
-        }
- }
  @media (max-width:1200px){
     html{
         font-size: 55%;
@@ -760,14 +716,15 @@ section{
     .navbar{
         position: absolute;
         top: 100%;
-        left: -100;
+        left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: var(--main-color);
+        background: var(--bg-color);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
         transition: .25s ease;
         transition-delay: .25s;
         z-index: 1;
+        
     }
     .navbar.active{
         transition-delay: 0s;

@@ -1,5 +1,5 @@
 //toggle icon navbar
-let menuicon = document.querySelector('menu-icon');
+let menuicon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuicon.onclick = () => {
@@ -36,23 +36,3 @@ window.onscroll = () => {
     menuicon.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
-//submit section
-/*
-const form = document.querySelector('form');
-function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "kaniska0610@gamil.com",
-        Password : "7182C115B57BF775B89B17CD92FB6B5B9277",
-        To : 'kaniska0610@gamil.com',
-        From : "kaniska0610@gamil.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
-form.addEventListener("submit", (e) => { 
-    e.preventDefault(); 
-    sendEmail();
-});/*
